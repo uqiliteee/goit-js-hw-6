@@ -1,8 +1,8 @@
 let counterValue = 0;
 
 const refs = {
-    decrementBtn: document.querySelector('button[data-actions="decrement"]'),
-    incrementBtn: document.querySelector('button[data-actions="increment"]'),
+    decrementBtn: document.querySelector('button[data-action="decrement"]'),
+    incrementBtn: document.querySelector('button[data-action="increment"]'),
     valueEl: document.querySelector('#value'),
 };
 
