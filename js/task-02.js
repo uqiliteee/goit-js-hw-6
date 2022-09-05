@@ -9,17 +9,15 @@ const ingredients = [
 
 const findIngredients = document.querySelector(' #ingredients');
 
-const makingIngredients = ingredients => {
-  return ingredients.map(ingredient => {
-    const addingIngredients = document.createElement('li');
-    addingIngredients.textContent = ingredient;
-    addingIngredients.classList.add('item');
-  });
-};
+const makingIngredients = ingredients.map(ingredient => {
+  const addingIngredients = document.createElement('li');
+  addingIngredients.textContent = ingredient;
+  addingIngredients.classList.add('item');
+  return addingIngredients
+});
 
-const addEl = makingIngredients(ingredients);
 
-findIngredients.append[...addEl];
+findIngredients.append(...makingIngredients);
 
 
 
