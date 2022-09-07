@@ -10,11 +10,11 @@ function onInputBlur(event) {
     const lengthOfInput = Number(inputLenght);
     const userInput = event.currentTarget.value.length;
 
-    if (lengthOfInput === userInput || lengthOfInput > userInput ) {
+    if (lengthOfInput === userInput) {
         inputColor.classList.add('valid');
         inputColor.classList.remove('invalid');
     }
-    if (lengthOfInput < userInput) {
+    if (lengthOfInput < userInput || lengthOfInput > userInput ) {
         inputColor.classList.add('invalid');
         inputColor.classList.remove('valid'); 
     }
